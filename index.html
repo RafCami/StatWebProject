@@ -12,24 +12,60 @@
 </head>
 <body>   
     <div class="container-fluid">
+
+
+
+
+
+
+    <!-- TEMPORARY SCREEN SIZE CHECKER -->
+        <div style="
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    background: rgba(247, 201, 241, 0.4);
+    padding: .5rem 1rem;
+    border-radius: 30px;
+">
+    <div class="d-block d-sm-none">Extra Small (xs)</div>
+    <div class="d-none d-sm-block d-md-none">Small (sm)</div>
+    <div class="d-none d-md-block d-lg-none">Medium (md)</div>
+    <div class="d-none d-lg-block d-xl-none">Large (lg)</div>
+    <div class="d-none d-xl-block d-xxl-none" >X-Large (xl)</div>
+    <div class="d-none d-xxl-block" >XX-Large (xxl)</div>
+</div>
+    <!-- END MEDIA SIZE CHECKER  -->
+
+
+
+
+
+
         <div class="row">
-            <div class="col-md-1 bg-light">
-                <div class="sticky-top pt-md-5">
+            <!-- ADD bg-light to sidebar? -->
+            <div class="col-1">
+                <div class="sticky-top pt-3 pt-md-5 d-none d-md-block">
                     <figure class="figure">
                         <img src="img/logo.png" class="figure-img img-fluid rounded" alt="Raf Cami Logo">
                     </figure>
                 </div>
-                <div class="d-flex fixed-bottom col-md-1 align-items-end">
-                    <div class="float-start col-md-6 text-center"><a href="files/CV.pdf">Download CV</a></div>
-                    <div class="float-end col-6 text-end"><a href="#">TOP</a></div>
+                <div class="d-xxl-flex fixed-bottom col-2 col-xxl-1 align-items-end">
+                <!-- <div class="d-flex fixed-bottom col-2 col-lg-1 align-items-end">
+                    <div class="float-start col-6 text-center"><a class="text-decoration-none text-reset fw-bold d-none d-md-block" href="files/CV.pdf" target="_blank">Download Resume</a></div>
+                    <div class="float-end col-6 text-end" ><a class="text-decoration-none text-reset fw-bold" href="#">TOP</a></div> -->
+                    <div class="col-6 text-center"><a class="text-decoration-none text-reset fw-bold d-none d-md-flex" href="files/CV.pdf" target="_blank">Download Resume</a></div>
+                    <div class="col-6 text-center text-xxl-end ps-2 ps-md-0" ><a class="text-decoration-none text-reset fw-bold" href="#">TOP</a></div>
                 </div>
             </div>
 
+            
             <div class="col">
                 <nav class="navbar navbar-expand-md sticky-top">
                     <div class="container-fluid">
                     <!-- PUT LOGO HERE ONLY VISIBLE ON MD AND SMALLER -->
-                        <a class="navbar-brand"><img src="img/logo.png" alt="RafCamiLogo" width="30" height="24"></a>
+                        <a class="navbar-brand d-md-none"><img src="img/logo.png" alt="RafCamiLogo" width="35" height="35"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -50,12 +86,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">contact</a>
                         </li>
+                        <li class="nav-item d-md-none">
+                            <a class="text-decoration-none nav-link" href="files/CV.pdf" target="_blank">Download CV</a>
+                        </li>
                         </ul>
                     </div>
                     </div>
                 </nav>
 
-                <main class="">
+                <main class="ps-1 ps-md-2">
                     <h1>Hi</h1>
                     <h2>this is me</h2>
                     <h3>And this is the story of how I got here</h3>
