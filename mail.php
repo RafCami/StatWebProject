@@ -1,5 +1,5 @@
 <?php
-if (empty($_POST['email']) || empty($_POST['message']) || empty($_POST['name'])) {
+if (empty($_POST['email']) || empty($_POST['message']) || empty($_POST['firstname']) || empty($_POST['lastname'])) {
     die('Please fill the required fields.');
 }
 $firstname = empty(htmlspecialchars($_POST['firstname'])) ? "Unknown" : htmlspecialchars($_POST['firstname']);
@@ -58,6 +58,6 @@ $response = "Mail sent successfully";
 } else {
 $response = "Mail not sent";
 }
+header("Location: contact.html");
 echo '<script>alert("' . $response . '")</script>';
-header( "Location: rafcami.be/Project2/contact.html" );
 ?>
