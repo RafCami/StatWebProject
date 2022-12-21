@@ -7,6 +7,7 @@ $lastname = empty(htmlspecialchars($_POST['lastname'])) ? "Unknown" : htmlspecia
 $name = $firstname . ' ' . $lastname;
 $from = htmlspecialchars($_POST['email']);
 $subject = empty(htmlspecialchars($_POST['subject'])) ? "No subject" : htmlspecialchars($_POST['subject']);
+$skill = empty(htmlspecialchars($_POST['skill'])) ? "No skill selected" : htmlspecialchars($_POST['skill']);
 
 //IP sender
 $ipaddress = '';
@@ -36,10 +37,12 @@ else {
 $message = '<html><body><table border="2"><tr><th>Name</th><td>';
 $message .= $name . '</td></tr>';
 
+$message .= '<tr><th>Skill</th><td>' . $skill . '</td></tr>';
+
 $message .= '<tr><th>Message</th><td>';
 $message .= empty(htmlspecialchars($_POST['message'])) ? "Default message" : htmlspecialchars($_POST['message']);
 $message .= "</td></tr>";
-$message .= '<tr><th>IP</th><td?>' . $ipaddress . '</td></tr>';
+$message .= '<tr><th>IP</th><td>' . $ipaddress . '</td></tr>';
 $message .= '</table>';
 
 $headers[] = 'MIME-Version: 1.0';
@@ -56,5 +59,5 @@ $response = "Mail sent successfully";
 $response = "Mail not sent";
 }
 echo '<script>alert("' . $response . '")</script>';
-header( "Location: rafcami.be/contact.html" );
+header( "Location: rafcami.be/Project2/contact.html" );
 ?>

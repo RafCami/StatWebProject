@@ -123,22 +123,31 @@
                                     <span class="fw-bold"> Through this form. (* = required fields)</span>
                                     <form action="mail.php" method="post">
                                         <div class="mb-1 form-floating">
-                                            <input type="text" name="firstname" id="firstname" placeholder="First name" class="form-control rounded-top">
+                                            <input type="text" name="firstname" id="firstname" placeholder="First name" class="form-control rounded-top" required>
                                             <label for="firstname">First name*</label>
                                             
                                         </div>
                                         <div class="mb-3 form-floating">
-                                            <input type="text" name="lastname" id="lastname" placeholder="Last name" class="form-control">
+                                            <input type="text" name="lastname" id="lastname" placeholder="Last name" class="form-control" required>
                                             <label for="lastname">Last name*</label>
                                         </div>
                                         <div class="mb-3 form-floating">
-                                            <input type="email" name="email" id="email" placeholder="Name@example.com" class="form-control" >
+                                            <input type="email" name="email" id="email" placeholder="Name@example.com" class="form-control" required>
                                             <label for="email">Email*</label>
-                                            <!-- <div id="emailSub" class="form-text">We'll never share your email with anyone else.</div> -->
                                         </div>
                                         <div class="mb-3 form-floating">
                                             <input type="text" name="subject" id="subject" placeholder="Subject" class="form-control">
                                             <label for="subject">Subject</label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <select class="form-select" name="skill" id="skill" aria-label="Skills">
+                                                <option selected>Skills</option>
+                                                <option value="C#">C#</option>
+                                                <option value="html/CSS">html/CSS</option>
+                                                <option value="SQL">SQL</option>
+                                                <option value="Python">Python</option>
+                                                <option value="other">Other</option>
+                                            </select>
                                         </div>
                                         <div class="mb-3">
                                             <label for="message" class="visually-hidden">Message</label>
