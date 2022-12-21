@@ -12,4 +12,26 @@
     left: 0;
 }
 }
+@media screen and (min-width: 1400px)
+{
+    .maps
+    {
+        height: 400px;
+        width: 450px;
+    }
+    .expimage
+    {
+        height: 50vh;
+    }
+}
+
+.movies
+{
+    background-image: url("../img/moviebanner.png");
+    /*-webkit-text-stroke: 1px rgb(255, 255, 255); /* width and color */
+}
+/* .carousel-item img
+{
+    height: 50vh;
     
+} */
