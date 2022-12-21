@@ -2,7 +2,9 @@
 if (empty($_POST['email']) || empty($_POST['message']) || empty($_POST['name'])) {
     die('Please fill the required fields.');
 }
-$name = empty(htmlspecialchars($_POST['name'])) ? "Unknown" : htmlspecialchars($_POST['name']);
+$firstname = empty(htmlspecialchars($_POST['firstname'])) ? "Unknown" : htmlspecialchars($_POST['firstname']);
+$lastname = empty(htmlspecialchars($_POST['lastname'])) ? "Unknown" : htmlspecialchars($_POST['lastname']);
+$name = $firstname . ' ' . $lastname;
 $from = htmlspecialchars($_POST['email']);
 $subject = empty(htmlspecialchars($_POST['subject'])) ? "No subject" : htmlspecialchars($_POST['subject']);
 
@@ -53,5 +55,6 @@ $response = "Mail sent successfully";
 } else {
 $response = "Mail not sent";
 }
-echo json_encode($response);
+echo '<script>alert("' . $response . '")</script>';
+header( "Location: rafcami.be/contact.html" );
 ?>
