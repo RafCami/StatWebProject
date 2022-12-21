@@ -4,7 +4,7 @@ function insertImageAbove() {
     var image = document.createElement('img');
     image.src = 'img/rope.png';
     image.style.display = 'block';
-    image.setAttribute('class', 'hangman offset-1');
+    image.setAttribute('class', 'hangman offset-1 ps-1 ps-md-2');
     topImage.insertBefore(image, topImage.firstChild);
 }
 
