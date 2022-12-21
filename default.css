@@ -1,0 +1,7 @@
+.hangman2
+{
+    background-image: url("img/stick.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-origin: border-box;
+}
