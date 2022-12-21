@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raf Cami">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -13,39 +14,7 @@
 </head>
 <body>   
     <div class="container-fluid hangman">
-
-
-
-
-
-
-    <!-- TEMPORARY SCREEN SIZE CHECKER -->
-        <div style="
-    position: fixed;
-    top: 90%;
-    left: 50%;
-    z-index: 10000;
-    transform: translate(-50%, -50%);
-    background: rgba(247, 201, 241, 0.4);
-    padding: .5rem 1rem;
-    border-radius: 30px;
-">
-    <div class="d-block d-sm-none">Extra Small (xs)</div>
-    <div class="d-none d-sm-block d-md-none">Small (sm)</div>
-    <div class="d-none d-md-block d-lg-none">Medium (md)</div>
-    <div class="d-none d-lg-block d-xl-none">Large (lg)</div>
-    <div class="d-none d-xl-block d-xxl-none" >X-Large (xl)</div>
-    <div class="d-none d-xxl-block" >XX-Large (xxl)</div>
-</div>
-    <!-- END MEDIA SIZE CHECKER  -->
-
-
-
-
-
-
         <div class="row">
-            <!-- ADD bg-light to sidebar? -->
             <div class="col-1">
                 <div class="sticky-top pt-3 pt-md-5 d-none d-md-block">
                     <figure class="figure">
@@ -53,19 +22,13 @@
                     </figure>
                 </div>
                 <div class="d-xxl-flex fixed-bottom col-2 col-xxl-1 align-items-end">
-                <!-- <div class="d-flex fixed-bottom col-2 col-lg-1 align-items-end">
-                    <div class="float-start col-6 text-center"><a class="text-decoration-none text-reset fw-bold d-none d-md-block" href="files/CV.pdf" target="_blank">Download Resume</a></div>
-                    <div class="float-end col-6 text-end" ><a class="text-decoration-none text-reset fw-bold" href="#">TOP</a></div> -->
                     <div class="col-6 text-center"><a class="text-decoration-none text-reset fw-bold d-none d-md-flex" href="files/CV.pdf" target="_blank">Download Resume</a></div>
                     <div class="col-6 text-center text-xxl-end ps-2 ps-md-0" ><a class="text-decoration-none text-reset fw-bold" href="#">TOP</a></div>
                 </div>
             </div>
-            
-            
             <div class="col">
                 <nav class="navbar navbar-expand-md sticky-top col-10">
                     <div class="container-fluid">
-                    <!-- PUT LOGO HERE ONLY VISIBLE ON MD AND SMALLER -->
                         <a class="navbar-brand d-md-none"><img src="img/logo.png" alt="RafCamiLogo" width="35" height="35"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -94,8 +57,6 @@
                     </div>
                 </div>
                 </nav>
-            
-
                 <main class="ps-1 ps-md-2 row">
                         <figure class="col-6 col-md-4 col-xl-3">
                             <img class="" src="img/stick.png" alt="stickfigure hold up by rope around the ankle">
@@ -108,21 +69,56 @@
                             </div>
                         </div>
                     <div class="col-8">
-                        <p>
-                            It all started on a Thursday 30 years ago...
-                            But lets skip ahead to a more relevant point.
-                        </p>
-                        <p>
-                            My name is Raf and I got into computers from a very young age.
-                            After a lot of trial and error on old junkers I learned to disassemble computers and put them back together again.
-                            It was around this time that I also discovered video games which are still my primary hobby, but more about my hobbies <a href="hobby.html">here</a>
-                        </p>
-                        <p>
-                            Eventually in high school I studied IT management where I learned the basics about programming, building websites, setting up and maintaining a network and many other hardware and software concepts.
-                            Afterwards I went to university taking up computer science where I went a lot deeper into the same material.
-                            After a long break I'm back to class, following a 2-year developer program.
-                            Outside of my studies I like to tinker and learn more about all sorts of tech which made me a jack of all trades, master of none.
-                        </p>
+                    </div>
+                    <div class="p-5 mb-4 bg-light rounded-3">
+                        <div class="container-fluid py-5">
+                            <h1 class="display-5 fw-bold">Welcome</h1>
+                            <p>
+                                It all started on a Thursday 30 years ago...
+                                But lets skip ahead to a more relevant point.
+                            </p>
+                            <p>
+                                My name is Raf and I got into computers from a very young age.
+                                After a lot of trial and error on old junkers I learned to disassemble computers and put them back together again.
+                                It was around this time that I also discovered video games which are still my primary hobby, but more about my hobbies <a class="text-decoration-none" href="hobby.html">here</a>
+                            </p>
+                            <p>
+                                Eventually in high school I studied IT management where I learned the basics about programming, building websites, setting up and maintaining a network and many other hardware and software concepts.
+                                Afterwards I went to university taking up computer science where I went a lot deeper into the same material.
+                                After a long break I'm back to class, following a 2-year developer program.
+                                Outside of my studies I like to tinker and learn more about all sorts of tech which made me a jack of all trades, master of none.
+                            </p>
+                            <button class="btn btn-danger btn-lg" type="button"><a class="text-decoration-none text-black" href="contact.html">Contact</a></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card" style="width: 18rem;">
+                                <a href="contact.html"><img src="img/previews/contact.png" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                <h5 class="card-title">Contact page</h5>
+                                <p class="card-text">Go here to find different ways to contact me.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card col-3" style="width: 18rem;">
+                                <a href="cv.html"><img src="img/previews/cv.png" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                <h5 class="card-title">CV page</h5>
+                                <p class="card-text">Page containing my curriculum vitae. you can also click the download link in the bottom left or the menu on mobile</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card col-4" style="width: 18rem;">
+                                <img src="img/previews/experience.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Experience page</h5>
+                                <p class="card-text">Page containing previous job experiences.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </main>
             </div>
